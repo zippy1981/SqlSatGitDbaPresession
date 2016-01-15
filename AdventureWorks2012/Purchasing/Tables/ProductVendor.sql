@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Purchasing].[ProductVendor] (
     [ProductID]        INT       NOT NULL,
-    [BusinessEntityID] INT       NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER       NOT NULL,
     [AverageLeadTime]  INT       NOT NULL,
     [StandardPrice]    MONEY     NOT NULL,
     [LastReceiptCost]  MONEY     NULL,

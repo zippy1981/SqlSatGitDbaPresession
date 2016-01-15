@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Person].[BusinessEntityContact] (
-    [BusinessEntityID] INT              NOT NULL,
-    [PersonID]         INT              NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER              NOT NULL,
+    [PersonID]         UNIQUEIDENTIFIER              NOT NULL,
     [ContactTypeID]    INT              NOT NULL,
     [rowguid]          UNIQUEIDENTIFIER CONSTRAINT [DF_BusinessEntityContact_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,
     [ModifiedDate]     DATETIME         CONSTRAINT [DF_BusinessEntityContact_ModifiedDate] DEFAULT (getdate()) NOT NULL,

@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Person].[BusinessEntityAddress] (
-    [BusinessEntityID] INT              NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER              NOT NULL,
     [AddressID]        INT              NOT NULL,
     [AddressTypeID]    INT              NOT NULL,
     [rowguid]          UNIQUEIDENTIFIER CONSTRAINT [DF_BusinessEntityAddress_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,

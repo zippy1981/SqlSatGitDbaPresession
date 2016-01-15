@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [Sales].[Customer] (
     [CustomerID]    INT              IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
-    [PersonID]      INT              NULL,
-    [StoreID]       INT              NULL,
+    [PersonID]      UNIQUEIDENTIFIER              NULL,
+    [StoreID]       UNIQUEIDENTIFIER              NULL,
     [TerritoryID]   INT              NULL,
     [AccountNumber] AS               (isnull('AW'+[dbo].[ufnLeadingZeros]([CustomerID]),'')),
     [rowguid]       UNIQUEIDENTIFIER CONSTRAINT [DF_Customer_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,

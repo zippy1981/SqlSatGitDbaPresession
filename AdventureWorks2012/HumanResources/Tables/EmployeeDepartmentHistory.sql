@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [HumanResources].[EmployeeDepartmentHistory] (
-    [BusinessEntityID] INT      NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER      NOT NULL,
     [DepartmentID]     SMALLINT NOT NULL,
     [ShiftID]          TINYINT  NOT NULL,
     [StartDate]        DATE     NOT NULL,

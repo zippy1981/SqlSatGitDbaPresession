@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Sales].[SalesPerson] (
-    [BusinessEntityID] INT              NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER              NOT NULL,
     [TerritoryID]      INT              NULL,
     [SalesQuota]       MONEY            NULL,
     [Bonus]            MONEY            CONSTRAINT [DF_SalesPerson_Bonus] DEFAULT ((0.00)) NOT NULL,

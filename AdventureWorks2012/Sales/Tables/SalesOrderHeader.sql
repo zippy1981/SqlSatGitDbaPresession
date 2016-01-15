@@ -10,7 +10,7 @@
     [PurchaseOrderNumber]    [dbo].[OrderNumber]   NULL,
     [AccountNumber]          [dbo].[AccountNumber] NULL,
     [CustomerID]             INT                   NOT NULL,
-    [SalesPersonID]          INT                   NULL,
+    [SalesPersonID]          UNIQUEIDENTIFIER                   NULL,
     [TerritoryID]            INT                   NULL,
     [BillToAddressID]        INT                   NOT NULL,
     [ShipToAddressID]        INT                   NOT NULL,

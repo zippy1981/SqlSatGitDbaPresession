@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Purchasing].[Vendor] (
-    [BusinessEntityID]        INT                   NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER                   NOT NULL,
     [AccountNumber]           [dbo].[AccountNumber] NOT NULL,
     [Name]                    [dbo].[Name]          NOT NULL,
     [CreditRating]            TINYINT               NOT NULL,

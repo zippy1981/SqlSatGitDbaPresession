@@ -3,7 +3,7 @@ CREATE FUNCTION [dbo].[ufnGetContactInformation](@PersonID int)
 RETURNS @retContactInformation TABLE 
 (
     -- Columns returned by the function
-    [PersonID] int NOT NULL, 
+    [PersonID] UNIQUEIDENTIFIER NOT NULL, 
     [FirstName] [nvarchar](50) NULL, 
     [LastName] [nvarchar](50) NULL, 
 	[JobTitle] [nvarchar](50) NULL,

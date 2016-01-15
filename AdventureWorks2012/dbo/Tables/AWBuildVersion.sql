@@ -7,6 +7,8 @@
 );
 
 
+
+
 GO
 EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Default constraint value of GETDATE()', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'AWBuildVersion', @level2type = N'CONSTRAINT', @level2name = N'DF_AWBuildVersion_ModifiedDate';
 
@@ -32,5 +34,7 @@ EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Primary key
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Current version number of the AdventureWorks 2012 sample database. ', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'AWBuildVersion';
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Current version number of the AdventureWorks 2014 sample database. ', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'AWBuildVersion';
+
+
 

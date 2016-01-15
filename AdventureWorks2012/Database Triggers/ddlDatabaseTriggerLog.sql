@@ -43,11 +43,14 @@ BEGIN
         @data
         );
 END;
+
 GO
 DISABLE TRIGGER [ddlDatabaseTriggerLog]
     ON DATABASE;
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Database trigger to audit all of the DDL changes made to the AdventureWorks 2012 database.', @level0type = N'TRIGGER', @level0name = N'ddlDatabaseTriggerLog';
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Database trigger to audit all of the DDL changes made to the AdventureWorks 2014 database.', @level0type = N'TRIGGER', @level0name = N'ddlDatabaseTriggerLog';
+
+
 

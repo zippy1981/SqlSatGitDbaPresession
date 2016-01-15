@@ -20,6 +20,8 @@
 );
 
 
+
+
 GO
 CREATE NONCLUSTERED INDEX [IX_Document_FileName_Revision]
     ON [Production].[Document]([FileName] ASC, [Revision] ASC);

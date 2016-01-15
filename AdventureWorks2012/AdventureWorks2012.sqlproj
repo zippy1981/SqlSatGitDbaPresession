@@ -178,7 +178,6 @@
     <Build Include="HumanResources\Views\vEmployeeDepartmentHistory.sql" />
     <Build Include="HumanResources\Views\vEmployeeDepartment.sql" />
     <Build Include="HumanResources\Views\vEmployee.sql" />
-    <Build Include="FullTextIndexes.sql" />
     <Build Include="dbo\Functions\ufnLeadingZeros.sql" />
     <Build Include="dbo\Functions\ufnGetStock.sql" />
     <Build Include="dbo\Functions\ufnGetSalesOrderStatusText.sql" />
@@ -219,6 +218,5 @@
     <Build Include="Person\XMLSchemaCollections\AdditionalContactInfoSchemaCollection.sql" />
     <Build Include="HumanResources\XMLSchemaCollections\HRResumeSchemaCollection.sql" />
     <Build Include="ExtendedProperties.sql" />
-    <Build Include="Storage\AW2014FullTextCatalog.sql" />
   </ItemGroup>
 </Project>

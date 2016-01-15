@@ -2,7 +2,7 @@
     [DocumentNode]    [sys].[hierarchyid] NOT NULL,
     [DocumentLevel]   AS                  ([DocumentNode].[GetLevel]()),
     [Title]           NVARCHAR (50)       NOT NULL,
-    [Owner]           INT                 NOT NULL,
+    [Owner]           UNIQUEIDENTIFIER                 NOT NULL,
     [FolderFlag]      BIT                 CONSTRAINT [DF_Document_FolderFlag] DEFAULT ((0)) NOT NULL,
     [FileName]        NVARCHAR (400)      NOT NULL,
     [FileExtension]   NVARCHAR (8)        NOT NULL,

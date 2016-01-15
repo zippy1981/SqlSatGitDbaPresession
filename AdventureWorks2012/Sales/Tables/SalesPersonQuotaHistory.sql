@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Sales].[SalesPersonQuotaHistory] (
-    [BusinessEntityID] INT              NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER              NOT NULL,
     [QuotaDate]        DATETIME         NOT NULL,
     [SalesQuota]       MONEY            NOT NULL,
     [rowguid]          UNIQUEIDENTIFIER CONSTRAINT [DF_SalesPersonQuotaHistory_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,

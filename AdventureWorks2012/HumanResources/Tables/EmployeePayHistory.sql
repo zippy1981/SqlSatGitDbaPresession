@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [HumanResources].[EmployeePayHistory] (
-    [BusinessEntityID] INT      NOT NULL,
+    [BusinessEntityID] UNIQUEIDENTIFIER      NOT NULL,
     [RateChangeDate]   DATETIME NOT NULL,
     [Rate]             MONEY    NOT NULL,
     [PayFrequency]     TINYINT  NOT NULL,

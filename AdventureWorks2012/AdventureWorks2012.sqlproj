@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{60cae8d4-5d07-441c-9d7a-1ee1f794035d}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -23,6 +23,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -178,7 +179,6 @@
     <Build Include="HumanResources\Views\vEmployeeDepartmentHistory.sql" />
     <Build Include="HumanResources\Views\vEmployeeDepartment.sql" />
     <Build Include="HumanResources\Views\vEmployee.sql" />
-    <Build Include="FullTextIndexes.sql" />
     <Build Include="dbo\Functions\ufnLeadingZeros.sql" />
     <Build Include="dbo\Functions\ufnGetStock.sql" />
     <Build Include="dbo\Functions\ufnGetSalesOrderStatusText.sql" />
@@ -219,6 +219,5 @@
     <Build Include="Person\XMLSchemaCollections\AdditionalContactInfoSchemaCollection.sql" />
     <Build Include="HumanResources\XMLSchemaCollections\HRResumeSchemaCollection.sql" />
     <Build Include="ExtendedProperties.sql" />
-    <Build Include="Storage\AW2014FullTextCatalog.sql" />
   </ItemGroup>
 </Project>
